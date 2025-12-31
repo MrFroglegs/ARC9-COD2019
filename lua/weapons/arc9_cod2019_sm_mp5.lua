@@ -825,9 +825,14 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["body_none"] = {
+    ["body_mini"] = {
         Bodygroups = {
             {0,1},
+        },
+    },
+    ["body_none"] = {
+        Bodygroups = {
+            {0,2},
         },
     },
     ["mag_none"] = {
