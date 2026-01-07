@@ -60,6 +60,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_jhp.png", "mips smooth")
 ATT.Description = "Ammunition with a hollow tip that expands when hitting its target, incapacitating them more easily.\nWidely used in police and civilian markets due to its inability to penetrate and ricochet."
 ATT.SortOrder = 0.2
 
+ATT.Free = false
 ATT.Category = "cod2019_ammo"
 
 ATT.SpreadMult = 1.06
@@ -82,6 +83,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sub.png", "mips smooth")
 ATT.Description = "Ammunition that reduced powder load rounds made for easier weapon handling.\nRecoil and firing report is reduced at the cost of ballistics."
 ATT.SortOrder = 0.3
 
+ATT.Free = false
 ATT.Category = "cod2019_ammo"
 
 ATT.TracerNum = 0
@@ -104,6 +106,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_color.png", "mips smooth")
 ATT.Description = "Ammunition loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?)."
 ATT.SortOrder = 0.4
 
+ATT.Free = true
 ATT.Category = "cod2019_ammo"
 
 ATT.TracerNum = 1
@@ -136,6 +139,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_color.png", "mips smooth")
 ATT.Description = "Ammunition loaded with colors that will go randomly depending of how much you fire."
 ATT.SortOrder = 0.4
 
+ATT.Free = true
 ATT.Category = "cod2019_ammo"
 ATT.TracerEffect = "cod2019_tracer_rainbow"
 
@@ -151,6 +155,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_db.png", "mips smooth")
 ATT.Description = "Incendiary ammunition engulfs targets in a wall of fire and sparks. 3000 °F magnesium shards torch enemies, dealing heavy damage over time while ignited."
 ATT.SortOrder = 0.5
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo", "cod2019_ammo_special"}
 
 ATT.ExplosionEffect = "cod2019_muzzle_inc"
@@ -215,6 +220,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_he.png", "mips smooth")
 ATT.Description = "Explosive ammunition that sacrifice direct damage in favor of dealing damage in a radius around the impact point.\nThe effect is spectacular, but little explosive filler can be put inside most bullets."
 ATT.SortOrder = 0.6
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sniper","cod2019_ammo_special"}
 
 ATT.RicochetChance = 0
@@ -246,6 +252,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_magnum.png", "mips smooth"
 ATT.Description = "High-power buckshot load with fewer larger lead pellets.\nProvides better close range power, but range and precision is worse."
 ATT.SortOrder = 1
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
@@ -274,6 +281,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_slug.png", "mips smooth")
 ATT.Description = "Single large projectile loaded in the shotshell.\nThe aerodynamic pellet has much higher effective range."
 ATT.SortOrder = 3
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.SpreadMult = 0.85
@@ -329,6 +337,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_flechette.png", "mips smoo
 ATT.Description = "Load containing thin, dart-shaped projectiles.\nProvides a tighter spread and better range as well as much higher penetration, but much lower stopping power."
 ATT.SortOrder = 5
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.NumAdd = 8
@@ -351,6 +360,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_tracer.png", "mips smooth"
 ATT.Description = "Ammunition loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?)."
 ATT.SortOrder = 0.4
 
+ATT.Free = true
 ATT.Category = "cod2019_ammo_sg"
 
 ATT.TracerEffect = "cod2019_tracer_custom"
@@ -383,6 +393,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_he.png", "mips smooth")
 ATT.Description = "Load containing an explosive compound, dealing damage in a small radius.\nEffectiveness is limited by the small caliber size."
 ATT.SortOrder = 6
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.NumOverride = 1
@@ -420,6 +431,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_magnum.png", "mips smooth"
 ATT.Description = "Load containing specialized pellets with a high chance to ricochet.\nThe pellet will bounce at any angle, and increases damage dramatically as it ricochets.\nHowever, it does minimal damage on direct impact."
 ATT.SortOrder = 7
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.DamageMinOverride = 12
@@ -448,6 +460,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_he_x4.png", "mips smooth")
 ATT.Description = "Load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.\nEffectiveness is limited by the small caliber size."
 ATT.SortOrder = 8
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.NumOverride = 4
@@ -486,6 +499,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_db.png", "mips smooth")
 ATT.Description = "12 gauge incendiary ammunition engulfs targets in a wall of fire and sparks. 3000 °F magnesium shards torch enemies, dealing heavy damage over time while ignited."
 ATT.SortOrder = 9
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_sg"}
 
 ATT.ExplosionEffect = "cod2019_muzzle_db"
@@ -1275,6 +1289,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_magnum.png", "mips smooth"
 ATT.Description = "High-power buckshot load with fewer larger lead pellets.\nProvides better close range power, but range and precision is worse."
 ATT.SortOrder = 1
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 ATT.PhysBulletMuzzleVelocityMultUBGL = 1.1
@@ -1303,6 +1318,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_slug.png", "mips smooth")
 ATT.Description = "Single large projectile loaded in the shotshell.\nThe aerodynamic pellet has much higher effective range."
 ATT.SortOrder = 3
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 ATT.SpreadMultUBGL = 0.66
@@ -1356,6 +1372,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_flechette.png", "mips smoo
 ATT.Description = "Load containing thin, dart-shaped projectiles.\nProvides a tighter spread and better range as well as much higher penetration, but much lower stopping power."
 ATT.SortOrder = 5
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 ATT.NumAddUBGL = 8
@@ -1378,6 +1395,7 @@ ARC9.LoadAttachment(ATT, "cod2019_ammo_ubgl_sg_flechette")
 -- ATT.Description = "Ammunition loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?)."
 -- ATT.SortOrder = 0.4
 
+-- ATT.Free = false
 -- ATT.Category = "cod2019_ammo_ubgl_sg"
 
 -- ATT.TracerEffectUBGL = "cod2019_tracer_custom"
@@ -1411,6 +1429,7 @@ ARC9.LoadAttachment(ATT, "cod2019_ammo_ubgl_sg_flechette")
 -- ATT.Description = "Load containing an explosive compound, dealing damage in a small radius.\nEffectiveness is limited by the small caliber size."
 -- ATT.SortOrder = 6
 
+-- ATT.Free = false
 -- ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 -- ATT.NumOverrideUBGL = 1
@@ -1447,6 +1466,7 @@ ATT.Icon = Material("entities/attachs/cod2019_ammo_sg_magnum.png", "mips smooth"
 ATT.Description = "Load containing specialized pellets with a high chance to ricochet.\nThe pellet will bounce at any angle, and increases damage dramatically as it ricochets.\nHowever, it does minimal damage on direct impact."
 ATT.SortOrder = 7
 
+ATT.Free = false
 ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 ATT.DamageMinOverrideUBGL = 12
@@ -1475,6 +1495,7 @@ ARC9.LoadAttachment(ATT, "cod2019_ammo_ubgl_sg_rebounder")
 -- ATT.Description = "Load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.\nEffectiveness is limited by the small caliber size."
 -- ATT.SortOrder = 8
 
+-- ATT.Free = false
 -- ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 -- ATT.NumOverrideUBGL = 4
@@ -1511,6 +1532,7 @@ ARC9.LoadAttachment(ATT, "cod2019_ammo_ubgl_sg_rebounder")
 -- ATT.Description = "12 gauge incendiary ammunition engulfs targets in a wall of fire and sparks. 3000 °F magnesium shards torch enemies, dealing heavy damage over time while ignited."
 -- ATT.SortOrder = 9
 
+-- ATT.Free = false
 -- ATT.Category = {"cod2019_ammo_ubgl_sg"}
 
 -- ATT.ExplosionEffectUBGL = "cod2019_muzzle_db"
