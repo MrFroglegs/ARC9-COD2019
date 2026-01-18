@@ -603,7 +603,7 @@ SWEP.Animations = {
 			{s = path .. "wfoly_plr_ar_kilo433_reload_empty_tilt.ogg", t = 15/30},
 			{s = path .. "wfoly_plr_ar_kilo433_reload_empty_magin_v2_01.ogg", t = 22/30},
 			{s = path .. "wfoly_plr_ar_kilo433_reload_empty_magin_v2_02.ogg", t = 26/30},
-			{s = path .. "wfoly_plr_ar_kilo433_reload_empty_charge_01.ogg", t = 38/30},
+			{s = path .. "wfoly_plr_ar_kilo433_reload_empty_fast_charge_01.ogg", t = 38/30},
 			{s = path .. "wfoly_plr_ar_kilo433_reload_empty_end.ogg", t = 47/30},
 			{hide = 1, t = 0},
 			{hide = 3, t = 0.475},

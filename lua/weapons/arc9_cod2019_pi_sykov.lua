@@ -1570,7 +1570,7 @@ SWEP.Attachments = {
 		-- DefaultIcon = Material("entities/defattachs/stock-ar.png", "mips smooth"),
         Category = {"cod2019_sykov_trigger"},
         Bone = "j_trigger",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0, 0.2),
     },
     { -- 7
         PrintName = ARC9:GetPhrase("mw19_category_magazine"),
