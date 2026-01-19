@@ -440,7 +440,62 @@ SWEP.Animations = {
 		PeekProgress = 0.9,
 		RefillProgress = 0.725,
 		FireASAP = true,
-		MagSwapTime = 1.5,
+		MagSwapTime = 0.7,
+		DropMagAt = 0.625,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1 },
+            { t = 0.7, lhik = 0, rhik = 1 },
+            { t = 0.9, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_start.ogg", t = 0.0},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_magout_01.ogg", t = 0.367},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_rattle.ogg", t = 0.433},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_arm.ogg", t = 0.9},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_magin_01.ogg", t = 1.033},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_tilt.ogg", t = 1.433},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_charge_01.ogg", t = 1.6},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_fast_end.ogg", t = 1.9},
+			{hide = 1, t = 0},
+			{hide = 2, t = 0.625},
+			{hide = 1, t = 0.85},
+        },
+    },
+    ["reload_empty_scope"] = {
+        Source = "reload_empty_scope",
+		MinProgress = 0.925,
+		PeekProgress = 0.9,
+		RefillProgress = 0.725,
+		FireASAP = true,
+		DropMagAt = 0.75,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0.75, lhik = 0, rhik = 1 },
+            { t = 0.95, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_start.ogg", t = 0.0},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_magout_01.ogg", t = 0.467},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_rattle.ogg", t = 0.633},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_arm.ogg", t = 1.133},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_magin_01.ogg", t = 1.233},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_tilt.ogg", t = 1.7},
+            {s = path .. "wfoly_plr_sm_uzulu_reload_empty_charge_01.ogg", t = 2.333},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_end.ogg", t = 2.8},
+			{hide = 1, t = 0},
+			{hide = 2, t = 0.75},
+			{hide = 1, t = 1},
+        },
+    },
+    ["reload_empty_fast_scope"] = {
+        Source = "reload_empty_fast_scope",
+		MinProgress = 0.925,
+		PeekProgress = 0.9,
+		RefillProgress = 0.725,
+		FireASAP = true,
+		MagSwapTime = 0.7,
 		DropMagAt = 0.625,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
@@ -546,7 +601,7 @@ SWEP.Animations = {
 		PeekProgress = 0.9,
 		RefillProgress = 0.725,
 		FireASAP = true,
-		MagSwapTime = 1.5,
+		MagSwapTime = 0.7,
 		DropMagAt = 0.65,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
@@ -652,7 +707,7 @@ SWEP.Animations = {
 		PeekProgress = 0.9,
 		RefillProgress = 0.725,
 		FireASAP = true,
-		MagSwapTime = 1.5,
+		MagSwapTime = 0.7,
 		DropMagAt = 0.65,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
@@ -852,6 +907,14 @@ local Translate_XMag2_Fast = {
     ["reload_empty"] = "reload_xmag2_fast_empty",
 }
 
+-- Default Mag + Optic Reloads --
+local Translate_Scope = {
+	["reload_empty"] = "reload_empty_scope",
+}
+local Translate_Scope_Fast = {
+	["reload_empty"] = "reload_empty_fast_scope",
+}
+
 --- No Stock, Fast, & Tac. Sprint ---
 local Translate_NoStock = {
     ["ready"] = "ready_nostock",
@@ -874,6 +937,7 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     local xmag = wep:HasElement("mag_xmag")
     local xmag2 = wep:HasElement("mag_xmag2")
 	local nos = wep:HasElement("stock_none")
+	local relscope = wep:HasElement("optic")
 
     if super_sprint and Translate_TacSprint[anim] then
         return Translate_TacSprint[anim]
@@ -881,7 +945,22 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
         return Translate_NoStock[anim]
     end
 
+	if xmag and speedload and relscope and Translate_XMag_Fast[anim] then
+		return Translate_XMag_Fast[anim]
+	elseif xmag and relscope and Translate_XMag[anim] then
+		return Translate_XMag[anim]
+	elseif xmag2 and speedload and relscope and Translate_XMag2_Fast then
+		return Translate_XMag2_Fast[anim]
+	elseif xmag2 and relscope and Translate_XMag2[anim] then
+		return Translate_XMag2[anim]
+	end
+
     if speedload then
+		if relscope then
+			if Translate_Scope_Fast[anim] then
+				return Translate_Scope_Fast[anim]
+			end
+		end
         if xmag then
             if Translate_XMag_Fast[anim] then
                 return Translate_XMag_Fast[anim]
@@ -896,6 +975,11 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
             end
         end
     else 
+		if relscope then
+			if Translate_Scope[anim] then
+				return Translate_Scope[anim]
+			end
+		end
         if xmag then
             if Translate_XMag[anim] then
                 return Translate_XMag[anim]
