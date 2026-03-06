@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-    "$basetexture" "models\cod2019\sykov\sykov_bullet_rgb"
-    "$bumpmap" "models\cod2019\sykov\sykov_bullet_n"
-    "$phongexponenttexture" "models\cod2019\sykov\sykov_bullet_e"
+    "$basetexture" "models/cod2019/shared/shell_ar_762x39s_rgb"
+    "$bumpmap" "models/cod2019/shared/shell_ar_762x39s_n"
+    "$phongexponenttexture" "models/cod2019/shared/shell_ar_762x39s_e"
 
     /////////////////
     "$color2" "[0.4 0.4 0.4]"                                     //do not touch this
@@ -13,14 +13,14 @@
     "$phongboost" "1"
     "$phongalbedotint" "1"
     "$phongalbedoboost" "10"                                //toy around with this
-    "$phongfresnelranges" "[1 0.1 0]"
+    "$phongfresnelranges" "[1 0.5 0]"
        
     /////////////////
     "$normalmapalphaenvmapmask" "1"                         //do not touch this
     /////////////////
 
     "$envmap" "env_cubemap"
-    "$envmaptint" "[0.247 0.188 0.157]"                 
+    "$envmaptint" "[0.42 0.357 0.212]"                 
 
     //remove this if not using MWB
     "Proxies"
@@ -28,8 +28,8 @@
         "Arc9EnvMapTint"
         {
             "min" "0"
-            "max" "1"
-            "color" "[0.247 0.188 0.157]"
+            "max" "0.5"
+            "color" "[0.42 0.357 0.212]"
         }
     }
 }

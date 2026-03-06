@@ -247,7 +247,7 @@ SWEP.CustomizeSnapshotFOV = 65
 SWEP.CustomizeNoRotate = false
 SWEP.CustomizeSnapshotPos = Vector(0, 55, 0)
 
-SWEP.PeekPos = Vector(-0.9, 3, -3)
+SWEP.PeekPos = Vector(-0.9, 3, -3.5)
 SWEP.PeekAng = Angle(-1, 1, -45)
 
 SWEP.PeekMaxFOV = 54
@@ -280,11 +280,11 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamQCA = 4
 SWEP.CamQCA_Mult = 1
 
-SWEP.ShellModel = "models/weapons/cod2019/shared/shell_762_hr.mdl"
+SWEP.ShellModel = "models/weapons/cod2019/shared/shell_ar_762s.mdl"
 SWEP.ShellCorrectAng = Angle(0, -90, 0)
-SWEP.ShellScale = 0.05
+SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.ShellSounds = ARC9.COD2019_338_Table
+SWEP.ShellSounds = ARC9.COD2019_556_Table
 
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false

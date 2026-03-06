@@ -283,7 +283,7 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamQCA = 4
 SWEP.CamQCA_Mult = 1
 
-SWEP.ShellModel = "models/weapons/cod2019/shared/fx_pistol_shell.mdl"
+SWEP.ShellModel = "models/weapons/cod2019/shared/shell_pi_9mm.mdl"
 SWEP.ShellSounds = ARC9.COD2019_9mm_Table
 SWEP.ShellCorrectAng = Angle(0, -90, 0)
 SWEP.ShellScale = 1
