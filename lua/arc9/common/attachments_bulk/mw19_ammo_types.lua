@@ -293,20 +293,20 @@ ATT.NumOverride = 1
 ATT.RicochetChanceAdd = 1
 ATT.ImpactForceMult = 5
 
-ATT.DamageMinMult = 2.5
-ATT.DamageMaxMult = 2.5
+ATT.DamageMinMult = 1.5 --2.5
+ATT.DamageMaxMult = 1.5 --2.5
 
 ATT.NoAimAssist = true
 
 if !warzonestats then -- Regular Stats
     ATT.BodyDamageMults = {
         [HITGROUP_HEAD] = 2,
-        [HITGROUP_CHEST] = 1.75,
-        [HITGROUP_STOMACH] = 1.5,
-        [HITGROUP_LEFTARM] = 1,
-        [HITGROUP_RIGHTARM] = 1,
-        [HITGROUP_LEFTLEG] = 1,
-        [HITGROUP_RIGHTLEG] = 1,
+        [HITGROUP_CHEST] = 1.25, --1.75
+        [HITGROUP_STOMACH] = 1, --1.5
+        [HITGROUP_LEFTARM] = 0.75, --1
+        [HITGROUP_RIGHTARM] = 0.75, --1
+        [HITGROUP_LEFTLEG] = 0.75, --1
+        [HITGROUP_RIGHTLEG] = 0.75, --1
     }
 else -- Warzone Stats
     ATT.BodyDamageMults = {
