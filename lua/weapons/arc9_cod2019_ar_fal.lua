@@ -307,6 +307,7 @@ SWEP.DropMagazineAng = Angle(0, -90, -90)
 SWEP.DropMagazineQCAHook = function(swep, old) 
   local curanim = swep:GetIKAnimation() or ""
   if curanim == "reload_fast" then return 5 end
+  if curanim == "reload_med_mag_fast" then return 5 end
   if curanim == "reload_xmag_fast" then return 5 end
 end
 
