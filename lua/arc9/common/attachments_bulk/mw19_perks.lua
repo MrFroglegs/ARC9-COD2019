@@ -291,12 +291,12 @@ end
 
 ARC9.LoadAttachment(ATT, "cod2019_perks_super_sprint")
 
-
+/////////////////////////// -- cod2019_perks_rock_multi
 ATT = {}
 
 ATT.PrintName = "Fistful of Rocks"
 ATT.CompactName = "Fistful"
-ATT.Description = "Why throw one rock when can throw many rock?"
+ATT.Description = "Why throw one rock when you can throw many rocks?"
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/arc9_cod2019_nade_rock.png", "mips smooth")
