@@ -448,4 +448,8 @@ SWEP.Attachments = {
         Bone = "tag_cosmetic_l",
         DuplicateModels = { { Bone = "tag_cosmetic" } },
     },
+    { -- 19 UBGL
+        Bone = "tag_laser_attach_l",
+		RejectAttachments = { ["cod2019_attach_m203"] = true },
+    },
 }
