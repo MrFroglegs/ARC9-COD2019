@@ -45,7 +45,7 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-12.5, -1, 165),
     Scale = 1,
 	
-	TPIKPosSightOffset = Vector(0.5, 1.25, -3),
+	TPIKPosSightOffset = Vector(0.5, 1.25, -1.5),
 }
 
 -------------------------- DAMAGE PROFILE
