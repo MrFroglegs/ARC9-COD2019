@@ -506,7 +506,7 @@ SWEP.Animations = {
 			{hide = 1, t = 0},
 			{hide = 0, t = 0.53},
 			{hide = 2, t = 2.08},
-			{hide = 1, t = 2.496},
+			{hide = 1, t = 2.497},
         },
     },
     ["reload_empty_ar"] = {
@@ -991,8 +991,8 @@ SWEP.Attachments = {
     { -- 10
         PrintName = ARC9:GetPhrase("mw19_category_perk"),
         Category = {"cod2019_perks","cod2019_perks_soh","cod2019_perks_ss"},
-        Bone = "tag_attachments",
-        Pos = Vector(12, 0, 1),
+        Bone = "tag_weapon_right",
+        Pos = Vector(-7, 0, -4),
     },
 	
 	-- Unofficial
